@@ -1,0 +1,102 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 4 (Swiss & High-Contrast)",
+  "brand_story": "Empowering students to secure intellectual property. A prestigious, authoritative platform for filing Indian design and utility patents, opening doors to higher studies and research internships.",
+  "colors": {
+    "primary": "#002FA7",
+    "primary_hover": "#001F70",
+    "background": "#FFFFFF",
+    "surface": "#F8FAFC",
+    "text_main": "#0F172A",
+    "text_muted": "#475569",
+    "border": "#E2E8F0",
+    "success": "#059669",
+    "warning": "#D97706",
+    "danger": "#DC2626"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cabinet Grotesk",
+      "body": "IBM Plex Sans",
+      "mono": "IBM Plex Mono"
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl tracking-tight font-black",
+      "h2": "text-4xl sm:text-5xl tracking-tight font-bold",
+      "h3": "text-2xl sm:text-3xl tracking-tight font-bold",
+      "h4": "text-xl sm:text-2xl font-semibold",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm tracking-[0.2em] uppercase font-semibold"
+    },
+    "rules": [
+      "Headlines > 32px must use tracking-tight",
+      "Overlines/Labels must be uppercase, tiny, wide spacing (tracking-[0.2em])",
+      "Line height: leading-none for headers, leading-relaxed for body"
+    ]
+  },
+  "layout_and_spacing": {
+    "spacing_scale": ["p-4", "p-8", "p-12", "p-16", "p-24", "p-32"],
+    "marketing_page": {
+      "grid": "Bento 'Tetris' Grid (asymmetrical, mix of spans)",
+      "padding": "Generous (p-16 to p-32)",
+      "alignment": "Left-aligned content inside asymmetrical containers"
+    },
+    "admin_dashboard": {
+      "grid": "Control Room Grid (dense, grid-cols-4)",
+      "gap": "gap-4 or gap-6",
+      "padding": "Compact (p-4 to p-6)",
+      "alignment": "Strict hierarchy, full utilization of pixels"
+    },
+    "rules": [
+      "Containers with borders must have internal padding (p-6 or p-8)",
+      "Mobile images max-h-[80vh]",
+      "Optical alignment over geometrical (pad icons on left)",
+      "No centering disease: favor asymmetry or strong left alignment"
+    ]
+  },
+  "surfaces_and_components": {
+    "header": "Crystal Glassmorphism (backdrop-blur-xl bg-white/70, 1px border-white/40, shadow-sm)",
+    "cards_dashboard": "Flat Solid or Grid Borders style. 1px border (border-border), no shadow by default. Hover: slight lift (-translate-y-1) and shadow-lg.",
+    "buttons": "Sharp or slightly rounded (rounded-sm). High contrast text. Hover state must explicitly define text color.",
+    "forms": "Use Shadcn customized components. Input/Select fields left-aligned, clear focus states (ring-2 ring-primary).",
+    "borders": "Use subtle 1px borders (border-border/40) for grid dividers.",
+    "radius": "rounded-sm or rounded-none to maintain Swiss/Technical aesthetic."
+  },
+  "icons_and_motion": {
+    "icon_library": "@phosphor-icons/react",
+    "motion": [
+      "Smooth scrolling with Lenis",
+      "Hover lifts (-translate-y-1) on cards",
+      "Explicit focus states for accessibility",
+      "Staggered entrance for lists/grids"
+    ],
+    "testing": "All interactive elements MUST include data-testid attribute (kebab-case, role-based)"
+  },
+  "media_and_images": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/77b2c1ef-28c5-4b25-83bc-0cfd40155c33/images/2e7fede79566b0e13d119500124540b731dd95cddc79b8aaca8459bc552fc494.png",
+      "description": "Abstract 3D rendering of a glowing patent document. Use as hero background with bg-white/40 overlay to ensure text contrast."
+    },
+    "certificate_showcase": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/77b2c1ef-28c5-4b25-83bc-0cfd40155c33/images/e0d20e027ef480507bc3c15f3aba92af1031dbd3c81b7431c2ee6bebeb048bdd.png",
+      "description": "Mockup of the recognized certificate of filing for completing the patent process."
+    },
+    "students_collaboration": {
+      "url": "https://images.unsplash.com/photo-1758270705518-b61b40527e76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHw0fHxjb2xsZWdlJTIwc3R1ZGVudHMlMjByZXNlYXJjaCUyMGxhcHRvcHxlbnwwfHx8fDE3NzY5NDMwOTN8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Diverse group of students collaborating. Use in 'Benefits of Patents' or 'Research Internships' section."
+    },
+    "university_campus": {
+      "url": "https://images.unsplash.com/photo-1775503059048-214026cce5cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB1bml2ZXJzaXR5JTIwY2FtcHVzfGVufDB8fHx8MTc3Njk0MzA5M3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Modern university campus. Use in the 'About Collaborators / KIIT University' section."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a Hybrid App: Marketing Landing Page + Admin Dashboard.",
+    "Use standard HTML/Tailwind for the Marketing Page to allow creative asymmetrical bento layouts. Avoid wrapping standard sections in Shadcn cards.",
+    "Use Shadcn UI components for the Admin Dashboard and the Student Application Form.",
+    "NEVER use placeholder images. ONLY use the URLs provided in the media_and_images section.",
+    "Implement @phosphor-icons/react or lucide-react for iconography.",
+    "Add data-testid to every button, form input, and interactive link.",
+    "Avoid centering everything. Use left-aligned text with strong typographic hierarchy."
+  ]
+}
