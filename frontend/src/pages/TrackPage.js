@@ -5,7 +5,7 @@ import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { FileCheck, ArrowLeft, Search, Clock, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { FileCheck, ArrowLeft, Search, Clock, CheckCircle, AlertCircle, Loader2, ExternalLink } from 'lucide-react';
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -73,6 +73,15 @@ export default function TrackPage() {
             Track Your Application
           </h1>
           <p className="text-base text-[#475569] mt-3">Enter your tracking ID to check the current status of your patent application.</p>
+          <a
+            href="https://search.ipindia.gov.in/DesignApplicationStatus/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[#002FA7] hover:underline"
+            data-testid="ipindia-track-link"
+          >
+            <ExternalLink className="w-4 h-4" /> Track on IP India Official Portal
+          </a>
         </div>
 
         <form onSubmit={handleTrack} className="flex gap-3 mb-8" data-testid="track-form">
@@ -164,6 +173,17 @@ export default function TrackPage() {
                 {['Submitted', 'Review', 'Filing', 'Filed', 'Ack.', 'Granted'].map((step, i) => (
                   <span key={i} className={`text-[10px] font-medium ${i < statusConfig.step ? 'text-[#002FA7]' : 'text-[#475569]'}`}>{step}</span>
                 ))}
+              </div>
+              <div className="mt-4 pt-4 border-t border-[#E2E8F0]">
+                <a
+                  href="https://search.ipindia.gov.in/DesignApplicationStatus/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-[#002FA7] hover:underline"
+                  data-testid="result-ipindia-link"
+                >
+                  <ExternalLink className="w-4 h-4" /> Verify on IP India Official Portal
+                </a>
               </div>
             </div>
           </div>
