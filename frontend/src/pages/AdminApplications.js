@@ -50,7 +50,7 @@ export default function AdminApplications() {
 
   useEffect(() => {
     fetchApplications();
-  }, [filterStatus]);
+  }, [filterStatus]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchApplications = async () => {
     setLoading(true);
