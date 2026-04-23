@@ -1,0 +1,7 @@
+fastapi
+motor
+pymongo
+bcrypt
+pyjwt
+pydantic
+mangum
