@@ -409,9 +409,7 @@ function Footer() {
           <div>
             <h4 className="text-sm tracking-[0.2em] uppercase font-semibold mb-4">Contact</h4>
             <p className="text-sm text-white/50 leading-relaxed">
-              KITPD2S Society<br />
-              KIIT University<br />
-              Bhubaneswar, Odisha, India
+              KITPD2S Society
             </p>
           </div>
         </div>
