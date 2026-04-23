@@ -42,7 +42,7 @@ function Navbar() {
             </div>
             <div className="leading-tight">
               <span className="font-bold text-[#0F172A] text-lg tracking-tight" style={{ fontFamily: 'Cabinet Grotesk, sans-serif' }}>PatentFile</span>
-              <span className="block text-[10px] tracking-[0.2em] uppercase text-[#475569] font-semibold">KIITPD2S Society</span>
+              <span className="block text-[10px] tracking-[0.2em] uppercase text-[#475569] font-semibold">KITPD2S Society</span>
             </div>
           </Link>
           <div className="hidden md:flex items-center gap-8">
@@ -144,7 +144,7 @@ function BenefitsSection() {
     { icon: GraduationCap, title: "Boost Higher Studies Applications", desc: "Patents on your CV make you stand out for MS/PhD admissions at top universities worldwide." },
     { icon: Briefcase, title: "Land Research Internships", desc: "Published patents demonstrate research capability, making you a top candidate for research positions." },
     { icon: Award, title: "Recognized Filing Certificate", desc: "Receive an official certificate of patent filing upon completion that validates your innovation." },
-    { icon: Users, title: "Expert Guidance Throughout", desc: "Work under the guidance of Dr. Anish Pandey with support from KIITPD2S Society." },
+    { icon: Users, title: "Expert Guidance Throughout", desc: "Work under the guidance of Dr. Anish Pandey with support from KITPD2S Society." },
     { icon: FileCheck, title: "100% Patent Grant Guarantee", desc: "Our society has a proven track record with 50+ patents granted. Your patent filing is in safe hands." },
     { icon: BookOpen, title: "Strengthen Your Research Profile", desc: "Add a published patent to your portfolio, establishing credibility in your chosen domain." },
   ];
@@ -324,7 +324,7 @@ function CollaboratorsSection() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { name: "KIITPD2S Society", role: "KIIT University", desc: "50+ patents granted. Leading intellectual property development society." },
+            { name: "KITPD2S Society", role: "KIIT University", desc: "50+ patents granted. Leading intellectual property development society." },
             { name: "H & P Products", role: "Industry Partner", desc: "Supporting innovation and commercialization of student patents." },
             { name: "NextCare Foundation", role: "Foundation Partner", desc: "Fostering innovation and technology development in education." },
             { name: "Dr. Anish Pandey", role: "Mentor & Guide", desc: "Expert guidance for patent filing and intellectual property strategy." },
@@ -394,7 +394,7 @@ function Footer() {
               <span className="font-bold text-lg" style={{ fontFamily: 'Cabinet Grotesk, sans-serif' }}>PatentFile</span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed">
-              A collaboration between KIITPD2S Society, H & P Products, and NextCare Foundation under the guidance of Dr. Anish Pandey.
+              A collaboration between KITPD2S Society, H & P Products, and NextCare Foundation under the guidance of Dr. Anish Pandey.
             </p>
           </div>
           <div>
@@ -409,14 +409,14 @@ function Footer() {
           <div>
             <h4 className="text-sm tracking-[0.2em] uppercase font-semibold mb-4">Contact</h4>
             <p className="text-sm text-white/50 leading-relaxed">
-              KIITPD2S Society<br />
+              KITPD2S Society<br />
               KIIT University<br />
               Bhubaneswar, Odisha, India
             </p>
           </div>
         </div>
         <div className="border-t border-white/10 mt-12 pt-8 text-center">
-          <p className="text-xs text-white/30">&copy; {new Date().getFullYear()} PatentFile. All rights reserved. Powered by KIITPD2S Society.</p>
+          <p className="text-xs text-white/30">&copy; {new Date().getFullYear()} PatentFile. All rights reserved. Powered by KITPD2S Society.</p>
         </div>
       </div>
     </footer>
